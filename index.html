@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <script src="gameControl.js"></script>
 </head>
-<body>
+<body onload="newGame()">
     <h1>Play dice against the computer!</h1>
     <div class="Scores">
         <div class="ScoreP">
@@ -18,15 +18,20 @@
             <p>Computer Score: </p>
             <p id="compScore">0</p>
         </div>
+    </div>
+
+    <div class="gameProgressInfo">
+        <div class="gameProgressInfo">
+            <p id="progInfo"></p>
+        </div>
         <div class="ScoreTurn">
             <p>Turn score: </p>
             <p id="turnScore">0</p>
         </div>
-
     </div>
 
     <div class="Rolls">
-        <p id="Roll">1</p>
+        <p id="Roll">0</p>
         <p id="RollHistory">-</p>
     </div>
 

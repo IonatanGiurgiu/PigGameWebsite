@@ -34,7 +34,25 @@ h1{
     font-size: 32px;
 }
 
+.gameProgressInfo{
+    text-align: center;
+    display: inline;
+    font-size: 30px;
+}
+
 .ScoreTurn{
     margin-top: 50px;
-    text-align: center;
 }
+
+#progInfo{
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    text-align: center;
+    font-size: 50px;
+}
+
+#turnScore{
+    margin-top: -20px;
+}
+
