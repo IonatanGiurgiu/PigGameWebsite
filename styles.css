@@ -1,0 +1,40 @@
+h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+.Scores p{
+    display: inline;
+    font-size: 30px;
+}
+
+#Roll{
+    font-size: 180px;
+    text-align: center;
+    color: blueviolet;
+    margin-top: -20px;
+    margin-bottom: -40px;
+    font-weight: bold;
+}
+
+#RollHistory{
+    text-align: center;
+}
+
+.Options{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.Options button{
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 20px;
+    font-size: 32px;
+}
+
+.ScoreTurn{
+    margin-top: 50px;
+    text-align: center;
+}
