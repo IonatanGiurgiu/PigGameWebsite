@@ -178,7 +178,7 @@ function computerPlay(){
             increaseScore();
         }
         computerPlay();
-    }, 50);
+    }, 500);
 }
 
 function getProbabilities(){
