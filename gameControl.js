@@ -113,7 +113,7 @@ function increaseScore(){
             document.getElementById("progInfo").style.color = "red";
         } else {
             document.getElementById("progInfo").innerHTML = "You won!!";
-            document.getElementById("progInfo").style.color = "lightgreen";
+            document.getElementById("progInfo").style.color = "orange";
         }
         return;
         
