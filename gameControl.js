@@ -263,6 +263,12 @@ function showHint(){
     var playerScore = parseInt(document.getElementById("playerScore").innerHTML);
     var turnScore = parseInt(document.getElementById("turnScore").innerHTML);
 
+    // Small patch where turn score stays up when computer stops
+    if (document.getElementById("turnScore").style.color == "green"){
+        turnScore = 0;
+    }
+
+
     var rollProb = 0;
     var holdProb = 0;
 
