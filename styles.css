@@ -3,6 +3,10 @@ h1{
     text-align: center;
 }
 
+body{
+    background-color: lightblue;
+}
+
 .Scores p{
     display: inline;
     font-size: 30px;
@@ -56,3 +60,36 @@ h1{
     margin-top: -20px;
 }
 
+#hintButton{
+    float: right;
+}
+
+#compWinProb{
+    text-align: center;
+    font-size: 22px;
+    margin-top: -15px;
+    margin-bottom: -30px;
+}
+
+#playerScore{
+    margin-left: 71px;
+}
+
+#compScore{
+    margin-left: 10px;
+}
+
+#cwp{
+    font-size: 20px;
+}
+
+.hint{
+    display: flex;
+    margin-top: -15px;
+    justify-content: center;
+}
+
+.hint p{
+    margin-left: 49px;
+    margin-right: 54px;
+}

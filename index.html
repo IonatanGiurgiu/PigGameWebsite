@@ -7,25 +7,27 @@
     <link rel="stylesheet" href="styles.css">
     <script src="gameControl.js"></script>
 </head>
-<body onload="newGame()">
+<body onload="pageLoad()">
     <h1>Play dice against the computer!</h1>
     <div class="Scores">
         <div class="ScoreP">
-            <p>Your Score: </p>
+            <p>Your Score:</p>
             <p id="playerScore">0</p>
         </div>
         <div class="ScoreP">
-            <p>Computer Score: </p>
+            <p>Computer Score:</p>
             <p id="compScore">0</p>
         </div>
     </div>
 
     <div class="gameProgressInfo">
         <div class="gameProgressInfo">
-            <p id="progInfo"></p>
+            <p id="progInfo">Loading database...</p>
+            <p id="cwp">Computer win probability:</p>
+            <p id="compWinProb"></p>
         </div>
         <div class="ScoreTurn">
-            <p>Turn score: </p>
+            <p>Turn score:</p>
             <p id="turnScore">0</p>
         </div>
     </div>
@@ -39,5 +41,12 @@
         <button onclick="roll()">Roll</button>
         <button onclick="hold()">Hold</button>
     </div>
+    <div class="hint">
+        <p id="myRollWin"></p>
+        <p id="myHoldWin"></p>
+    </div>
+
+    <button id="newGameButton" onclick="newGame()">New Game</button>
+    <button id="hintButton" onclick="showHint()">Hint</button>
 </body>
 </html>
