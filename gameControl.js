@@ -28,18 +28,21 @@ function roll(){
     document.getElementById("myRollWin").innerHTML = "";
     document.getElementById("myHoldWin").innerHTML = "";
 
-    if (document.getElementById("turnScore").innerHTML == 0){
-        document.getElementById("RollHistory").innerHTML = "-"
+    if (document.getElementById("Roll").innerHTML == 0){
+        document.getElementById("RollHistory").innerHTML = "-";
+        document.getElementById("turnScore").innerHTML = 0;
     }
     increaseDice();
 }
 
 function increaseDice(){
+    document.getElementById("turnScore").style.color = "black";
     var rollElement = document.getElementById("Roll");
     var rollNum = Math.floor(Math.random() * 6 + 1);
     rollElement.innerHTML = rollNum;
 
     if (rollNum == 1){
+        document.getElementById("Roll").innerHTML = 0;
         document.getElementById("turnScore").innerHTML = 0;
         document.getElementById("RollHistory").innerHTML = "-";
         turn *= -1;
@@ -81,10 +84,16 @@ function hold(){
     }
     document.getElementById("myRollWin").innerHTML = "";
     document.getElementById("myHoldWin").innerHTML = "";
+
+    if (document.getElementById("Roll").innerHTML == 0){
+        document.getElementById("RollHistory").innerHTML = "-";
+        document.getElementById("turnScore").innerHTML = 0;
+    }
     increaseScore();
 }
 
 function increaseScore(){
+    document.getElementById("turnScore").style.color = "black";
     var ptsWon = parseInt(document.getElementById("turnScore").innerHTML);
     if (turn == 1){
         var player = document.getElementById("playerScore");
@@ -110,10 +119,13 @@ function increaseScore(){
         
     }
 
-    document.getElementById("turnScore").innerHTML = 0;
+    
     document.getElementById("Roll").innerHTML = 0;
     if (turn == 1){
-        document.getElementById("RollHistory").innerHTML = "-"
+        document.getElementById("RollHistory").innerHTML = "-";
+        document.getElementById("turnScore").innerHTML = 0;
+    } else {
+        document.getElementById("turnScore").style.color = "green";
     }
 
     turn *= -1
